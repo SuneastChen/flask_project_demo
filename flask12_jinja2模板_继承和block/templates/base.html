@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        .nav{background: aquamarine;height:65px;}
+        ul{line-height: 65px}
+        li{float: left;list-style: none;padding:0px 10px;line-height: 65px}
+        a{color: white}
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">新闻</a></li>
+            <li><a href="#">发布问答</a></li>
+        </ul>
+
+    </div>
+{% block main %}{% endblock %}     {#父模板中定义接口给子模板用#}
+</body>
+</html>

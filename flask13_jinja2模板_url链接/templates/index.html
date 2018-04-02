@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+    <script src="{{ url_for('static',filename='js/index.js') }}"></script>
+
+</head>
+<body>
+<a href="/login/">登陆1</a>
+<p>登陆1用href="/login/"实现</p>
+<br>
+<a href="{{ url_for('login') }}">登陆2</a>
+<p>登陆2用反转url,url_for('login')实现</p>
+<img src="{{ url_for('static',filename='images/meinv.jpg') }}" alt="">
+
+</body>
+</html>

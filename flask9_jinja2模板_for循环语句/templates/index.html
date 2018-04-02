@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>字典的遍历:</p>
+    {% for k,v in dict.items() %}
+        <p>{{ k }}:{{ v }}</p>     {#相当于python里的print(k,v)#}
+    {% endfor %}
+    <hr>
+    <p>列表的遍历:</p>
+    {% for i in list %}
+        <p>{{ i }}</p>     {#相当于python里的print(i)#}
+    {% endfor %}
+</body>
+</html>

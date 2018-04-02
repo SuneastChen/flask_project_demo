@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    这是html文件中写入的文字
+    <p>用户名:{{ username }}</p>
+    <p>性别:{{ gender }}</p>
+    <p>年龄:{{ age }}</p>
+
+    <hr>
+    man形参,传入的实参值为p,即Person的实例
+    <p>man的名字:{{ man.name }}</p>
+    <p>man的年龄:{{ man.age }}</p>
+
+    <hr>
+    url_dict形参,传入的实参值为{'baidu': 'www.baidu.com', 'Google': 'www.google.com'}
+    <p>百度:{{ url_dict.baidu }}</p>
+    <p>谷歌:{{ url_dict.Google }}</p>
+</body>
+</html>

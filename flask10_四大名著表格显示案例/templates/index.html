@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>books_list的遍历:</p>
+    <table rules="all" frame="box" height="150" width="300">
+        <tr><th>书名</th><th>作者</th><th>价格</th></tr>
+        {% for book in books_list %}
+            <tr align="center">
+                <td>{{ book.name }}</td>
+                <td>{{ book.author }}</td>
+                <td>{{ book.price }}</td>
+            </tr>      {# 此用用for循环嵌套有点问题 #}
+        {% endfor %}
+    </table>
+
+
+</body>
+</html>

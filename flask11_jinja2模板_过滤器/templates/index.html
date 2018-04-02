@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <img src="{{ img_url|default('http://avatar.fishc.com/avatar.php?uid=313298&size=middle') }}" alt="">
+    <hr>
+    <p>评论数:{{ comments_list|length }}</p>
+    <ul>
+        {% for comment in comments_list %}
+            <li>
+                <a href="#">{{ comment.name }}</a>
+                <p>{{ comment.comment }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
